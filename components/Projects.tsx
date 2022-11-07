@@ -25,7 +25,7 @@ opacity:0}}
 transition={{duration:1.2}}
 whileInView={{opacity:1,y:0}}
 viewport={{once:true}}
-key={project._id}
+key={i}
 src={urlFor(project?.image).url()}
 className='w-72 h-72 mt-36'
 

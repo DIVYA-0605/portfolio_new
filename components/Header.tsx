@@ -6,10 +6,10 @@ import { Social } from "../typings";
 
 
 type Props = {
-  socials:Social[];
+  // socials:Social[];
 };
 
-export default function Header({socials}: Props) {
+export default function Header({}: Props) {
   return (
     <header className="sticky top-0 flex items-start justify-between max-w-6xl mx-auto z-20 xl:items-center p-5">
       <motion.div
@@ -29,7 +29,7 @@ export default function Header({socials}: Props) {
         className="flex flex-row items-center"
       >
         {/* Social Icons */}
-       {socials.map((social)=>(
+       {/* {socials.map((social)=>(
     <SocialIcon
     key={social._id}
     url={social.url}
@@ -39,7 +39,7 @@ export default function Header({socials}: Props) {
         bgColor="transparent"
       />
 
-       ))}
+       ))} */}
       
       </motion.div>
 

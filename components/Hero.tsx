@@ -20,6 +20,7 @@ export default function Hero({}: Props) {
       <img
         className="relative rounded-full w-32 h-32 mx-auto object-cover"
         src="honey.JPG"
+        alt="author image"
       />
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">

@@ -25,7 +25,7 @@ type Props= {
 
 
 
-const Home=({socials}:Props) => {
+const Home=({socials,pageInfo,projects,skills}:Props) => {
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 z-0">
       <Head>
@@ -37,19 +37,19 @@ const Home=({socials}:Props) => {
       <Header socials={socials}/>
       {/* Hero */}
       <section id="hero" className="snap-start">
-        <Hero />
+        <Hero pageInfo={pageInfo} />
       </section>
       {/* About */}
     <section id="about" className="snap-center">
-      <About/>
+      <About  pageInfo={pageInfo}/>
     </section>
       {/* Skills */}
       <section id="skills" className="snap-start">
-      <Skills/>
+      <Skills skills={skills}/>
     </section>
       {/* Projects */}
       <section id="projects" className="snap-start">
-      <Projects/>
+      <Projects projects={projects}/>
     </section>
       {/* Contact Me */}
       <section id="contact" className="snap-start">
@@ -59,13 +59,11 @@ const Home=({socials}:Props) => {
     <Link href="#hero">
     <footer className="sticky bottom-5 w-full cursor-pointer">
       <div className="flex items-center justify-center">
-        <Image className="rounded-full filter grayscale hover:grayscale-0 cursor-pointer
+        <img className="rounded-full filter grayscale hover:grayscale-0 cursor-pointer h-10 w-10 object-cover
         "
-        src="https://i.imgur.com/e2yvD6A.png"
+        src="divya.JPG"
         alt="Picture of the author"
-        width={40}
-      height={40}
-        
+      
         />
       </div>
     </footer>
